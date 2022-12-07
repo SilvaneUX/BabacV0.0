@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141634986161",
+    "project_id": "smart-bali-backpacker",
+    "storage_bucket": "smart-bali-backpacker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141634986161:android:43376efaf643119b1b0290",
+        "android_client_info": {
+          "package_name": "com.smart.smartbalibackpaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141634986161-ku9dtsjg4tsp669cum62mhaj8v5ka535.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzNCAl0WbBEOuvyQTsYntd7RulH_nfwpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141634986161-ku9dtsjg4tsp669cum62mhaj8v5ka535.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

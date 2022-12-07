@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smart.smartbalibackpaker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartBaliBackpaker"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".dashboard.SearchView"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".guide.AllDestinationGuide"
+            android:exported="false" />
+        <activity
+            android:name=".registration.ChooseAccomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".registration.ChoosePlaceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".guide.ListVacationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".guide.TimerGuideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".guide.DetailGuideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".registration.RegistSecondFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.GroupInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".registration.RegistFirstFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.GroupAddMemberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.GroupChatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.ChatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.AddPhotoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChangePassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding.OnboardingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${GOOGLE_MAPS_API_KEY}" />
+    </application>
+
+</manifest>

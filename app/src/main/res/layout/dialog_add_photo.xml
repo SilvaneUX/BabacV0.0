@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/take_picture"
+        app:layout_constraintEnd_toStartOf="@+id/img_gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageView
+        android:id="@+id/img_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/pick_from_gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_camera"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gallery" />
+
+    <ImageView
+        android:id="@+id/img_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/remove_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_camera"
+        app:srcCompat="@drawable/trash" />
+
+    <TextView
+        android:id="@+id/text_view_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/take_picture"
+        app:layout_constraintEnd_toEndOf="@+id/img_camera"
+        app:layout_constraintStart_toStartOf="@+id/img_camera"
+        app:layout_constraintTop_toBottomOf="@+id/img_camera" />
+
+    <TextView
+        android:id="@+id/text_view_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/pick_from_gallery"
+        app:layout_constraintEnd_toEndOf="@+id/img_gallery"
+        app:layout_constraintStart_toStartOf="@+id/img_gallery"
+        app:layout_constraintTop_toBottomOf="@+id/img_gallery" />
+
+    <TextView
+        android:id="@+id/txt_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/remove_picture"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_remove"
+        app:layout_constraintStart_toStartOf="@+id/img_remove"
+        app:layout_constraintTop_toBottomOf="@+id/img_remove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

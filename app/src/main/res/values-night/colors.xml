@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_primary_dark">#25345F</color>
+    <color name="bg_primary">#3D5188</color>
+    <color name="bg_blue_dark">#25345F</color>
+    <color name="bg_blue">#3D5188</color>
+    <color name="txt_middle">#A9A9A9</color>
+    <color name="txt_app">#FFFFFF</color>
+    <color name="txt_selected_tab_color">#000000</color>
+    <color name="txt_unselected_tab_color">#FFFFFF</color>
+    <color name="tab_indicator_color">#FFFFFF</color>
+    <color name="circle_selected_color">#FFFFFF</color>
+    <color name="circle_unselected_color">#999999</color>
+    <color name="bg_btn_remove_favorite">#d9534f</color>
+    <color name="bg_btn_add_favorite">#669900</color>
+</resources>

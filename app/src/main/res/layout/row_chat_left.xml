@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/bg_primary_dark"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_chatbox_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_chatbox_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="6dp"
+        android:background="@drawable/bg_chat_sender"
+        android:fontFamily="@font/poppins"
+        android:maxWidth="200dp"
+        android:padding="10dp"
+        android:text="Hallo"
+        android:textColor="@color/txt_app"
+        app:layout_constraintStart_toEndOf="@+id/iv_chatbox_photo"
+        app:layout_constraintTop_toTopOf="@+id/iv_chatbox_photo" />
+
+    <TextView
+        android:id="@+id/tv_chatbox_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="02/05/2021 05:40 "
+        android:textColor="@color/txt_app"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chatbox_message"
+        app:layout_constraintStart_toEndOf="@+id/tv_chatbox_message" />
+
+    <TextView
+        android:id="@+id/tv_chatbox_message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="seen"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/txt_middle"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_chatbox_timestamp"
+        app:layout_constraintStart_toEndOf="@+id/tv_chatbox_message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

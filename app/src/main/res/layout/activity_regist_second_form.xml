@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:id="@+id/activity_regist2nd_form"
+    tools:context=".registration.RegistSecondFormActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_form2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ic_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pendaftaran Tahap 2"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:visibility="gone"
+        android:id="@+id/et_regist_accom"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Pilihan Akomodasi (optional)"
+        app:layout_constraintEnd_toEndOf="@id/btn_regist_accomodation"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regist_accomodation">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:visibility="gone"
+            android:id="@+id/et_regist_fill_accom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_regist_acco_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Akomodasi (Optional)"
+        android:textColor="@color/txt_app"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_regist_accomodation"
+        app:layout_constraintStart_toStartOf="@+id/et_regist_accom"
+        app:layout_constraintTop_toTopOf="@+id/btn_regist_accomodation" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_regist_accomodation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Tambahkan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/toolbar_form2"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_form2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_regist_place"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="List Tempat Tujuan"
+        app:layout_constraintEnd_toEndOf="@id/btn_regist_place"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regist_place">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_regist_fill_place"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+
+            android:layout_height="0dp"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_budget_left" />
+
+    <TextView
+        android:id="@+id/tv_budget_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Sisa biaya tiket masuk : "
+        android:textColor="@color/txt_app"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_regist_place" />
+
+    <TextView
+        android:id="@+id/et_budget_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Rp55.000"
+        android:textColor="@color/txt_app"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_budget_left"
+        app:layout_constraintStart_toEndOf="@id/tv_budget_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_budget_left" />
+
+    <TextView
+        android:id="@+id/tv_regist_place_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Tujuan Wisata"
+        android:textColor="@color/txt_app"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_regist_place"
+        app:layout_constraintStart_toStartOf="@+id/et_regist_place"
+        app:layout_constraintTop_toTopOf="@+id/btn_regist_place" />
+
+
+    <Button
+        android:id="@+id/btn_regist_place"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Tambahkan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_regist_accom" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_final_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_btn_green"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Simpan dan Lanjut"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
